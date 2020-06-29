@@ -71,7 +71,7 @@ Sample Query Results:
 
 #### MVP Libraries & Dependencies
 
-> Use this section to list the key supporting libraries and their role in the project.
+
 
 |   Library    | Description                                |
 | :----------: | :----------------------------------------- |
@@ -82,8 +82,6 @@ Sample Query Results:
 <br>
 
 #### MVP Components
-
-> Use this section to define your React components and the data architecture of your app.
 
 ```
 src
@@ -103,7 +101,6 @@ src
 
 #### MVP Breakdown
 
-> Use this section to go into further depth regarding every component, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
 |  Component   |    Type    | state | props | hooks | Description                                |
 | :----------: | :--------: | :---: | :---: | :---: | :----------------------------------------- |
@@ -118,9 +115,7 @@ src
 
 #### MVP Timeframes
 
-> Use this section to estimate the time necessary to build out each of the components you've described above. 
->
-> Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe.
+
 
 | Task             | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------- | :------: | :------------: | :-----------: | :---------: |
@@ -135,7 +130,6 @@ src
 
 ### Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
 
 - _Use storybook to style the application_
 - _Add in another API as another function_
