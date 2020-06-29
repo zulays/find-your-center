@@ -1,4 +1,4 @@
-# find-your-center
+# find your center
 
 - [Project Planning](#Project-Planning)
   - [Description](#Description)
@@ -16,78 +16,54 @@
   - [Code Issues & Resolutions](#Code-Issues--Resolutions)
 
 ## Project Planning
-
-> The Project Planning section should be completed for your project pitch with instructors.
->
-> To ensure correct Markdown, I recommend cloning this wiki and copy/pasting the raw template code.
-
 <br>
 
 ### Description
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_**find your center** is an app designed for helping individuals with anxiety (or those going through stressful moments) by offering different tools that can be used to create a calming environment and lower stress levels. The app will feature a few mediums to achieve this such as, colors and positive affirmations._
 
 <br>
 
 ### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views.
+![Dummy Link](https://xd.adobe.com/view/34f092e2-98f9-4f13-9ed1-44d54fe0061b-61a3/)
 
-![Dummy Link](url)
+- Desktop Dashboard & Component
 
-- Desktop Landing
+![Dummy Link](https://xd.adobe.com/view/a3c3d6d9-1267-42b9-932d-1e6facb8eeb4-f690/)
 
-![Dummy Link](url)
+- Mobile Dashboard & Component
 
-- Desktop Body
-
-![Dummy Link](url)
-
-- Desktop Resource Index
-
-![Dummy Link](url)
-
-- Desktop Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
 
 <br>
 
 ### MVP
 
-> The Minimum Viable Product should be a well-planned and easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_The **find your center** MVP is to successfully use an affirmation API to render a random positive affirmation upon clicking a button. Also, I'd like to have background for the app randomize through a palette calming blue/green tones using seed data._
 
 <br>
 
 #### MVP Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- _Use React Router to access external API_
+- _Render data from API using event listener_
+- _Create seed data for color randomizing_
+- _Set up randomizing function for color to change upon page load_
+
 
 <br>
 
 #### MVP API
 
-> Use the Data Section to define the API(s) you will be consuming for your project, inluding sample URL queries.
 
 |    API     | Quality Docs? | Documentation | Sample Query                            |
 | :--------: | :-----------: | :------------ | :-------------------------------------- |
-| WeatherAPI |      yes      | _example.com_ | _example.com/mickeymouse?s=movies&t=10_ |
+| Affirmations API |      yes      | _https://github.com/annthurium/affirmations_ | _https://www.affirmations.dev/_ |
 
 Sample Query Results:
 
 ```json
+{"affirmation":"It's not a mistake, it's a learning opportunity"}
 
 ```
 
@@ -99,9 +75,9 @@ Sample Query Results:
 
 |   Library    | Description                                |
 | :----------: | :----------------------------------------- |
-|    React     | _Lorem ipsum dolor sit amet, consectetur._ |
-| React Router | _Lorem ipsum dolor sit amet, consectetur._ |
-| React Spring | _Lorem ipsum dolor sit amet, consectetur._ |
+|    React     | _Powers the application functionality/environment_ |
+| React Router | _Allows application to be navigable without having to refresh the page _ |
+
 
 <br>
 
@@ -111,18 +87,16 @@ Sample Query Results:
 
 ```
 src
-|__ assets/
-      |__ data-tests
-      |__ fonts
-      |__ images
-      |__ wireframes
-|__ components/
-      |__ Header.jsx
-      |__ Hero.jsx
-      |__ Ipsum.jsx
-      |__ Lorem.jsx
-      |__ CTA.jsx
-      |__ Footer.jsx
+|__ data/
+      |__ affirms.json
+      |__ colors.json
+|__ components
+      |__ App.js
+      |__ Nav.js
+      |__ Dashboard.js
+      |__ Background.js
+      |__ Affirm.js
+      |__ Footer.js
 ```
 
 <br>
@@ -133,15 +107,12 @@ src
 
 |  Component   |    Type    | state | props | hooks | Description                                |
 | :----------: | :--------: | :---: | :---: | :---: | :----------------------------------------- |
-|    App.js    |   class    |   y   |   n   |   n   | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Header    | functional |   n   |   n   |   n   | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Navigation  | functional |   n   |   n   |   n   | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Home     | functional |   n   |   n   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Index     | functional |   n   |   n   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Detail    | functional |   n   |   n   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
-|   Gallery    |   class    |   y   |   n   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
-| Gallery Card | functional |   n   |   y   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Footer    | functional |   n   |   n   |   n   | _Lorem ipsum dolor sit amet, consectetur._ |
+|    App.js    | functional |   y   |   n   |   y   | _API call will be access and props declared_ |
+|  Navigation  |   class    |   n   |   n   |   n   | _Renders the nav bar_ |
+|  Dashboard   | functional |   y   |   y   |   y   | _All tools will live in this component_ |
+|  Background  | functional |   y   |   y   |   y   | _Controls the background change_ |
+|    Affirm    | functional |   y   |   y   |   y   | _where affirmation generator will lives_ |
+|    Footer    |   class    |   n   |   n   |   n   | _Renders the footer_ |
 
 <br>
 
@@ -153,12 +124,12 @@ src
 
 | Task             | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Lorem Ipsum      |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Lorem Ipsum      |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Lorem Ipsum      |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Lorem Ipsum      |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL            |          |     6 hrs      |     3 hrs     |     TBD     |
+| Access API       |    H     |     1.5 hrs      |     x hrs     |     TBD     |
+| Create seed data |    H     |     4 hrs      |     x hrs     |     TBD     |
+| Randomize seed data  |    H     |     4 hrs      |      x hrs     |     TBD     |
+| Build out components      |    M     |     5 hrs      |     x hrs     |     TBD     |
+| Sync seed data with onload    |   M    |     3 hrs      |      x hrs     |     TBD     |
+| TOTAL            |          |     17.5 hrs      |      x hrs     |     TBD     |
 
 <br>
 
@@ -166,8 +137,9 @@ src
 
 > Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
 
-- _Lorem ipsum._
-- _Lorem ipsum._
+- _Use storybook to style the application_
+- _Add in another API as another function_
+- _Access Spotify API to play background music_
 
 <br>
 
@@ -176,11 +148,14 @@ src
 ## Project Delivery
 
 > The Project Delivery section should be completed as your work on your project.
+> TBD
 
 ### Code Showcase
 
 > Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+> TBD
 
 ### Code Issues & Resolutions
 
 > Use this section to list of all major issues encountered and their resolution, if you'd like.
+- Figure out how to use color API
