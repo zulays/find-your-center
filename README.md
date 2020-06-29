@@ -26,11 +26,11 @@ _**find your center** is an app designed for helping individuals with anxiety (o
 
 ### Wireframes
 
-![Dummy Link](https://xd.adobe.com/view/34f092e2-98f9-4f13-9ed1-44d54fe0061b-61a3/)
+[Adobe Xd](https://xd.adobe.com/view/34f092e2-98f9-4f13-9ed1-44d54fe0061b-61a3/)
 
 - Desktop Dashboard & Component
 
-![Dummy Link](https://xd.adobe.com/view/a3c3d6d9-1267-42b9-932d-1e6facb8eeb4-f690/)
+[Adobe Xd](https://xd.adobe.com/view/a3c3d6d9-1267-42b9-932d-1e6facb8eeb4-f690/)
 
 - Mobile Dashboard & Component
 
