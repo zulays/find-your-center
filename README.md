@@ -76,7 +76,7 @@ Sample Query Results:
 |   Library    | Description                                |
 | :----------: | :----------------------------------------- |
 |    React     | _Powers the application functionality/environment_ |
-| React Router | _Allows application to be navigable without having to refresh the page _ |
+| React Router | _Allows application to be navigable without having to refresh the page_ |
 
 
 <br>
@@ -132,7 +132,7 @@ src
 
 
 - _Use storybook to style the application_
-- _Add in another API as another function_
+- _Add in another API as another tool, possibly dog or cute animal images_
 - _Access Spotify API to play background music_
 
 <br>
