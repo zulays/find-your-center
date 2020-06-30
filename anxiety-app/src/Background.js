@@ -1,13 +1,11 @@
 import React, { Component } from "react"
-import colors from "./data/colors.json"
+
 
 function Background() {
 
-  let [color, updateColor] = useState()
+  // let [color, updateColor] = useState()
 
-  for (let i = 0; i < colors.length) {
-    return updateColor(color[2])
-  }
+
 
   return (
     <div className="bg-option">
@@ -18,6 +16,11 @@ function Background() {
 
 
 export default Background
+
+
+// state control the background
+// setTimeout
+// loop through the data
 
 
 // const todoList = [{ title: 'item 1', isDone: false }, { title: 'item 2', isDone: true }]
