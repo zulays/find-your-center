@@ -1,38 +1,91 @@
-.App {
+.app {
   text-align: center;
+  font-family: "Gotu", "Open Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; 
+  overflow: hidden;
+  animation: color 20s ease infinite;
+  transition-duration: 1000ms;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
+@keyframes color {
+  /* from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
-  }
+  } */
 }
+
+.nav-bar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  color: #023E8A;
+  /* font-family: "Gotu", "Open Sans", sans-serif; */
+}
+
+.nav, 
+.nav-li{
+  align-content: flex-end;
+  display: inline;
+  padding: 10px;
+  font-size: 20px;
+  
+}
+
+a{
+  text-decoration: none;
+  color: #023E8A;
+}
+
+.welcome-page{
+  margin: 200px;
+  text-align: center;
+}
+
+.dash{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 200px;
+  text-align: center;
+}
+
+.affirm{
+  background-color: #ffffff;
+  margin: 100px;
+  padding: 40px;
+  border: 2px solid #444444;
+  border-radius: 5px;
+  box-shadow: 10px 10px 30px 5px #444444;
+}
+
+.bg-option{
+  background-color: #ffffff;
+  margin: 100px;
+  padding: 40px;
+  border: 2px solid #444444;
+  border-radius: 5px;
+  box-shadow: 10px 10px 30px 5px #444444;
+}
+
+.welcome-button, 
+.affirm-button,
+.bg-button{
+  font-family: "Gotu", "Open Sans", sans-serif;
+}
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+}
+

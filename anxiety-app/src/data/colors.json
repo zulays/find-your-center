@@ -1,14 +1,298 @@
 [
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {}
+  {
+    "gray": [
+      {
+        "name": "timberwolf",
+        "color": "#D3D0CB"
+      },
+      {
+        "name": "cadet grey",
+        "color": "#9FB1BC"
+      },
+      {
+        "name": "light slate gray",
+        "color": "#6E8898"
+      },
+      {
+        "name": "gainsboro",
+        "color": "#DCDCDD"
+      },
+      {
+        "name": "silver",
+        "color": "#C5C3C6"
+      },
+      {
+        "name": "lavender web",
+        "color": "#E1E5F2"
+      },
+      {
+        "name": "cadet grey",
+        "color": "#8DA9C4"
+      },
+      {
+        "name": "platinum",
+        "color": "E0E1DD"
+      },
+      {
+        "name": "Isabelline",
+        "color": "EDE7E3"
+      },
+      {
+        "name": "",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "blue": [
+      {
+        "name": "sky blue crayola",
+        "color": "#56CFE1"
+      },
+      {
+        "name": "vivid sky blue",
+        "color": "#48BFE3"
+      },
+      {
+        "name": "blue jeans",
+        "color": "#4EA8DE"
+      },
+      {
+        "name": "tufts blue",
+        "color": "#5390D9"
+      },
+      {
+        "name": "slate blue",
+        "color": "#5E60CE"
+      },
+      {
+        "name": "navy blue",
+        "color": "#03045E"
+      },
+      {
+        "name": "dark cornflower blue",
+        "color": "#023E8A"
+      },
+      {
+        "name": "star command blue",
+        "color": "#007B6"
+      },
+      {
+        "name": "blue green",
+        "color": "#0096C7"
+      },
+      {
+        "name": "cerulean crayola",
+        "color": "#00B4D8"
+      },
+      {
+        "name": "sky blue crayola",
+        "color": "#90E0EF"
+      },
+      {
+        "name": "blizzard blue",
+        "color": "#ADE8F4"
+      },
+      {
+        "name": "powder blue",
+        "color": "#CAF0F8"
+      },
+      {
+        "name": "blue sapphire",
+        "color": "#05668D"
+      },
+      {
+        "name": "blue sapphire",
+        "color": "#2E5266"
+      },
+      {
+        "name": "cambridge blue",
+        "color": "#AEC3B0"
+      },
+      {
+        "name": "teal blue",
+        "color": "#598392"
+      },
+      {
+        "name": "beau blue",
+        "color": "#BFDBF7"
+      },
+      {
+        "name": "cadet",
+        "color": "#4F6D7A"
+      },
+      {
+        "name": "columbia blue",
+        "color": "#C0D6DF"
+      },
+      {
+        "name": "alice blue",
+        "color": "#DBE9EE"
+      },
+      {
+        "name": "blue yonder",
+        "color": "#4A6FA5"
+      },
+      {
+        "name": "indigo dye",
+        "color": "#134074"
+      },
+      {
+        "name": "prussian blue",
+        "color": "#13315C"
+      },
+      {
+        "name": "steel teal",
+        "color": "#55828B"
+      },
+      {
+        "name": "st patricks blue",
+        "color": "#1C306F"
+      },
+      {
+        "name": "light steel blue",
+        "color": "#A9BCD0"
+      },
+      {
+        "name": "cadet blue",
+        "color": "#58A4B0"
+      },
+      {
+        "name": "shadow blue",
+        "color": "#778DA9"
+      },
+      {
+        "name": "bdazzled blue",
+        "color": "#415A77"
+      },
+      {
+        "name": "middle blue",
+        "color": "#82C0CC"
+      },
+      {
+        "name": "pacific blue",
+        "color": "#489FB5"
+      },
+      {
+        "name": "",
+        "color": "#"
+      },
+      {
+        "name": "",
+        "color": "#"
+      }
+    ]
+  },
+  {
+    "green": [
+      {
+        "name": "persian green",
+        "color": "#00A896"
+      },
+      {
+        "name": "mountain meadow",
+        "color": "#02C39A"
+      },
+      {
+        "name": "pale spring bud",
+        "color": "#F0F3BD"
+      },
+      {
+        "name": "nyanza",
+        "color": "#D8F3DC"
+      },
+      {
+        "name": "turquoise green",
+        "color": "#B7E4C7"
+      },
+      {
+        "name": "turquoise green",
+        "color": "#95D5B2"
+      },
+      {
+        "name": "ocean green",
+        "color": "#74C69D"
+      },
+      {
+        "name": "ocean green",
+        "color": "#52B788"
+      },
+      {
+        "name": "illuminating emerald",
+        "color": "#40916C"
+      },
+      {
+        "name": "bottle green",
+        "color": "#2D6A4F"
+      },
+      {
+        "name": "aquamarine",
+        "color": "#80FFD8"
+      },
+      {
+        "name": "turquoise",
+        "color": "#72EFDD"
+      },
+      {
+        "name": "medium turquoise",
+        "color": "#64DFDF"
+      },
+      {
+        "name": "metallic seaweed",
+        "color": "#028090"
+      },
+      {
+        "name": "midnight green eagle green",
+        "color": "#124559"
+      },
+      {
+        "name": "beige mint",
+        "color": "EFF6E0"
+      },
+      {
+        "name": "wintergreen dream",
+        "color": "#6B9080"
+      },
+      {
+        "name": "cambridge green",
+        "color": "#A4C3B2"
+      },
+      {
+        "name": "light cyan",
+        "color": "#CCE3DE"
+      },
+      {
+        "name": "mint cream",
+        "color": "#E4F4F4"
+      },
+      {
+        "name": "mint cream",
+        "color": "#F6FFF8"
+      },
+      {
+        "name": "tea green",
+        "color": "#C9E4CA"
+      },
+      {
+        "name": "deep space sparkle",
+        "color": "#3B6064"
+      },
+      {
+        "name": "eton blue",
+        "color": "#87BBA2"
+      },
+      {
+        "name": "steel teal",
+        "color": "#55828B"
+      },
+      {
+        "name": "ming",
+        "color": "#16697A"
+      },
+      {
+        "name": "",
+        "color": "#"
+      }
+    ]
+  }
 ]
