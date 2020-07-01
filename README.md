@@ -12,6 +12,7 @@
     - [MVP Timeframes](#MVP-Timeframes)
   - [Post-MVP](#Post-MVP)
 - [Project Delivery](#Project-Delivery)
+  - [Change Log](#Change-Log)
   - [Code Showcase](#Code-Showcase)
   - [Code Issues & Resolutions](#Code-Issues--Resolutions)
 
@@ -86,13 +87,12 @@ Sample Query Results:
 ```
 src
 |__ data/
-      |__ affirms.json
       |__ colors.json
 |__ components
       |__ App.js
       |__ Nav.js
       |__ Dashboard.js
-      |__ Background.js
+      |__ Pups.js
       |__ Affirm.js
       |__ Footer.js
 ```
@@ -107,7 +107,7 @@ src
 |    App.js    | functional |   y   |   n   |   y   | _API call will be access and props declared_ |
 |  Navigation  |   class    |   n   |   n   |   n   | _Renders the nav bar_ |
 |  Dashboard   | functional |   y   |   y   |   y   | _All tools will live in this component_ |
-|  Background  | functional |   y   |   y   |   y   | _Controls the background change_ |
+|  Pups  | functional |   y   |   y   |   y   | _where puppy photos will generate_ |
 |    Affirm    | functional |   y   |   y   |   y   | _where affirmation generator will lives_ |
 |    Footer    |   class    |   n   |   n   |   n   | _Renders the footer_ |
 
@@ -119,12 +119,12 @@ src
 
 | Task             | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------- | :------: | :------------: | :-----------: | :---------: |
-| Access API       |    H     |     1.5 hrs      |     x hrs     |     TBD     |
-| Create seed data |    H     |     4 hrs      |     x hrs     |     TBD     |
-| Randomize seed data  |    H     |     4 hrs      |      x hrs     |     TBD     |
-| Build out components      |    M     |     5 hrs      |     x hrs     |     TBD     |
-| Sync seed data with onload    |   M    |     3 hrs      |      x hrs     |     TBD     |
-| TOTAL            |          |     17.5 hrs      |      x hrs     |     TBD     |
+| Access API       |    H     |     1.5 hrs      |    .30 hrs     |    .30 hrs     |
+| Create seed data |    H     |     4 hrs      |     1 hrs     |     1 hrs      |
+| Randomize seed data  |    H     |     4 hrs      |      2 hrs     |     2 hrs    |
+| Build out components      |    M     |     5 hrs      |     1.5 hrs     |     1.5 hrs     |
+| Sync seed data with onload    |   M    |     3 hrs      |      1 hrs     |     1 hrs      |
+| TOTAL            |          |     17.5 hrs      |      5.8 hrs     |      5.8 hrs     |
 
 <br>
 
@@ -142,7 +142,9 @@ src
 ## Project Delivery
 
 > The Project Delivery section should be completed as your work on your project.
-> TBD
+
+## Change Log
+> 7.1.2020 Components and breakdown updated, _Background_ became _Pups_
 
 ### Code Showcase
 
@@ -152,4 +154,7 @@ src
 ### Code Issues & Resolutions
 
 > Use this section to list of all major issues encountered and their resolution, if you'd like.
-- Figure out how to use color API
+- Issue #1: Using the seed data to become the background color and randomize periodically 
+  Resolution #1: It was a simple randomColor function that needed to be created. I used a setInterval timer to allow for the periodic change
+
+

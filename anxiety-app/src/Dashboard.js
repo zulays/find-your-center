@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
 import Affirm from "./Affirm"
-// import Background from "./Background"
 import Pups from "./Pups"
 import { Route } from "react-router-dom"
 
