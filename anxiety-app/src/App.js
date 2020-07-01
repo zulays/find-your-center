@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { Route, useLocation } from "react-router-dom"
+import { Route } from "react-router-dom"
 import Axios from "axios"
 import Nav from "./Nav"
 import Dashboard from "./Dashboard"
@@ -13,6 +13,7 @@ function App() {
   let [quote, updateQuote] = useState()
   // let [color, updateColor] = useState("")
   let [pup, updatePup] = useState()
+  let [guard, updateGuard] = useState(false)
 
   const apiCall = async () => {
     const res = await Axios("https://cors-anywhere.herokuapp.com/https://www.affirmations.dev", { Accept: "application/JSON" })
@@ -22,9 +23,40 @@ function App() {
 
   const findPup = async () => {
     const response = await Axios("https://random.dog/doggos")
-    console.log(response)
-    updatePup(response)
+    let randomPup = Math.floor(Math.random() * response.data.length)
+    updatePup(response.data[randomPup])
+    console.log(response.data[randomPup])
+    updateGuard(true)
   }
+
+
+
+  return (
+    <div className="app">
+      <nav className="nav-bar">
+        <Nav />
+      </nav>
+      <main>
+        <Route path="/" exact>
+          <Welcome />
+        </Route>
+        <Route path="/dashboard" exact>
+          <Dashboard affirm={quote} func={apiCall} colors={colors} pups={pup} pupsFunc={findPup} guard={guard} />
+        </Route>
+      </main>
+
+      <footer>
+        <Footer />
+      </footer>
+
+    </div >
+  );
+}
+
+export default App;
+
+
+//set conditional just check what route it's on 
 
   //function that loops through json data 
   //on setTimeout
@@ -72,31 +104,3 @@ function App() {
   // useEffect(() => {
   //   colorChange()
   // }, [])
-
-
-  return (
-    <div className="app" >
-      <nav className="nav-bar">
-        <Nav />
-      </nav>
-      <main>
-        <Route path="/" exact>
-          <Welcome />
-        </Route>
-        <Route path="/dashboard" exact>
-          <Dashboard affirm={quote} func={apiCall} colors={colors} />
-        </Route>
-      </main>
-
-      <footer>
-        <Footer />
-      </footer>
-
-    </div >
-  );
-}
-
-export default App;
-
-
-//set conditional just check what route it's on 

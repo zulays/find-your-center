@@ -10,7 +10,7 @@ function Footer() {
       <p>Zulay Scottborgh &copy;</p>
       <a href="https://www.linkedin.com/in/zulay-scottborgh/"><img src="https://res.cloudinary.com/zumariposa/image/upload/c_scale,w_32/v1593482664/LI-In-Bug_ptyigb.png" alt="linkedin-page" /></a>
       <br />
-      <p>Powered by <a href="">affirmations and </a><a href="">random dog</a></p>
+      <p>Powered by <a href="https://github.com/annthurium/affirmations">affirmations </a> and <a href="https://random.dog/">random dog</a></p>
     </>
   )
 }

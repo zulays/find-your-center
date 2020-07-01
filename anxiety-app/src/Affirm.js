@@ -5,8 +5,8 @@ function Affirm(props) {
 
   return (
     <div className="affirm">
-      <p className="quote-cont">{props.quote}</p>
-      <button className="affirm-button" onClick={props.action}>AOTD</button>
+      <p className="quote-cont">{props.affirm}</p>
+      <button className="affirm-button" onClick={props.func}>AOTD</button>
     </div>
   )
 }
