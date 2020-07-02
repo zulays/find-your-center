@@ -5,7 +5,7 @@ function Pups(props) {
 
 
   return (
-    <div className="Pups">
+    <div className="pups">
       {props.guard && <img className="pupImg" src={`https://random.dog/${props.pups}`} alt="puppy" />}
       <button className="pups-button" onClick={props.pupsFunc}>pups</button>
     </div>
@@ -13,5 +13,3 @@ function Pups(props) {
 }
 
 export default withRouter(Pups)
-
-//reset pup to prevState
