@@ -29,11 +29,11 @@
   },
   {
     "name": "platinum",
-    "color": "E0E1DD"
+    "color": "#E0E1DD"
   },
   {
     "name": "Isabelline",
-    "color": "EDE7E3"
+    "color": "#EDE7E3"
   },
   {
     "name": "sky blue crayola",
@@ -65,7 +65,7 @@
   },
   {
     "name": "star command blue",
-    "color": "#007B6"
+    "color": "#0077B6"
   },
   {
     "name": "blue green",
@@ -225,7 +225,7 @@
   },
   {
     "name": "beige mint",
-    "color": "EFF6E0"
+    "color": "#EFF6E0"
   },
   {
     "name": "wintergreen dream",

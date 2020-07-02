@@ -1,16 +1,14 @@
 .app {
   text-align: center;
   font-family: "Gotu", "Open Sans", sans-serif;
-}
-
-body{
   height: 100%;
   width: 100%;
-  margin: 0;
-  padding: 0; 
-  overflow: hidden;
-  animation: color 20s ease infinite;
-  transition-duration: 1000ms;
+  position: fixed;
+  /* display: flex; */
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 
 @keyframes color {
@@ -21,6 +19,13 @@ body{
     transform: rotate(360deg);
   } */
 }
+
+a{
+  text-decoration: none;
+  color: #023E8A;
+}
+
+/* ******* Components  ******* */
 
 .nav-bar{
   display: flex;
@@ -33,16 +38,14 @@ body{
 
 .nav, 
 .nav-li{
-  align-content: flex-end;
-  display: inline;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   padding: 10px;
   font-size: 20px;
   
-}
-
-a{
-  text-decoration: none;
-  color: #023E8A;
 }
 
 .welcome-page{
@@ -50,16 +53,33 @@ a{
   text-align: center;
 }
 
+
 .dash{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 200px;
+  align-content: space-between;
+  margin: 100px;
   text-align: center;
 }
 
+
+.dash-buttonA,
+.dash-buttonP{
+  display: inline-block;
+  margin: 50px;
+  padding: 80px 40px;
+  border-radius: 5px;
+  font-family: "Gotu", "Open Sans", sans-serif;
+}
+
 .affirm,
- .pups{
+.pups{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
   background-color: #ffffff;
   margin: 100px;
   padding: 40px;
@@ -67,31 +87,35 @@ a{
   border-radius: 5px;
   box-shadow: 10px 10px 30px 5px #444444;
 }
-
-.bg-option{
-  background-color: #ffffff;
-  margin: 100px;
-  padding: 40px;
-  border: 2px solid #444444;
-  border-radius: 5px;
-  box-shadow: 10px 10px 30px 5px #444444;
-}
-
 
 .pupImg{
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: auto;
 }
 
 .welcome-button, 
-.affirm-button{
+.affirm-button,
+.pups-button{
+  margin: 30px;
   font-family: "Gotu", "Open Sans", sans-serif;
 }
 
 footer{
+  text-align: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  align-content: center;
+  padding: 10px;
   bottom: 0;
+}
+
+.name, 
+.citations{
+  padding: 10px;
+}
+
+.icons{
+  padding: 15px;
 }
 

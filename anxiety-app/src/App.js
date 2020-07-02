@@ -30,19 +30,27 @@ function App() {
   }
 
 
-  const colorChange = () => {
-    let randomColor = Math.floor(Math.random() * colors.length)
-    updateColor(colors[randomColor].color)
+
+  const slow = (ms) => {
+    return new Promise(slowDown => setInterval(slowDown, ms))
   }
 
+  const colorChange = async () => {
+    for (let i = 0; i < colors.length; i++) {
+      // let randomColor = Math.floor(Math.random() * colors.length)
+      await slow(1000)
+      updateColor(colors[i].color)
+    }
+  }
+
+
   useEffect(() => {
-    let time
-    time = setInterval(() => {
-      colorChange()
-    }, 2000)
+    //   let time
+    //   time = setInterval(() => {
+    colorChange()
+    // }, 2000)
   }, [])
 
-  // https://cors-anywhere.herokuapp.com/
 
   return (
     <div className="app" style={{ backgroundColor: color }}>
