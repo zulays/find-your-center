@@ -65,16 +65,22 @@ a{
 
 
 .dash-buttonA,
-.dash-buttonP{
-  display: inline-block;
+.dash-buttonP,
+.dash-buttonC{
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
   margin: 50px;
-  padding: 80px 40px;
+  padding: 100px;
   border-radius: 5px;
   font-family: "Gotu", "Open Sans", sans-serif;
 }
 
 .affirm,
-.pups{
+.pups,
+.count{
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
@@ -116,6 +122,6 @@ footer{
 }
 
 .icons{
-  padding: 15px;
+  padding: 10px;
 }
 

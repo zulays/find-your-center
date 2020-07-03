@@ -9,6 +9,7 @@ import Welcome from "./Welcome"
 import colors from "./data/colors.json"
 import Affirm from "./Affirm"
 import Pups from "./Pups"
+import Count from "./Count"
 
 
 function App() {
@@ -30,25 +31,25 @@ function App() {
   }
 
 
-
+  //slows down the loop to allow color to be rendered
   const slow = (ms) => {
     return new Promise(slowDown => setInterval(slowDown, ms))
   }
 
   const colorChange = async () => {
     for (let i = 0; i < colors.length; i++) {
-      // let randomColor = Math.floor(Math.random() * colors.length)
-      await slow(1000)
+      if (i === colors.length - 1) {
+        await slow(1050)
+        updateColor(colors[i].color)
+        i = 0
+      } await slow(1050)
       updateColor(colors[i].color)
     }
   }
 
 
   useEffect(() => {
-    //   let time
-    //   time = setInterval(() => {
     colorChange()
-    // }, 2000)
   }, [])
 
 
@@ -67,6 +68,9 @@ function App() {
         </Route>
         <Route path="/dashboard/affirm">
           <Affirm affirm={quote} func={apiCall} />
+        </Route>
+        <Route path="/dashboard/count">
+          <Count />
         </Route>
         <Route path="/dashboard/pups">
           <Pups pups={pup} pupsFunc={findPup} guard={guard} />

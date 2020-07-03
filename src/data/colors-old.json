@@ -1,98 +1,86 @@
 [
   {
     "name": "timberwolf",
-    "color": "#F2FAFC"
+    "color": "#D3D0CB"
   },
   {
     "name": "cadet grey",
-    "color": "#F5FBF9"
+    "color": "#9FB1BC"
   },
   {
     "name": "light slate gray",
-    "color": "#EBF3F6"
+    "color": "#6E8898"
   },
   {
     "name": "gainsboro",
-    "color": "#E7F1F3"
+    "color": "#DCDCDD"
   },
   {
     "name": "silver",
-    "color": "#D4E1E9"
+    "color": "#C5C3C6"
   },
   {
     "name": "lavender web",
-    "color": "#CAE1E8"
+    "color": "#E1E5F2"
   },
   {
     "name": "cadet grey",
-    "color": "#B1C9D3"
+    "color": "#8DA9C4"
   },
   {
     "name": "platinum",
-    "color": "#CADCEA"
+    "color": "#E0E1DD"
   },
   {
     "name": "Isabelline",
-    "color": "#BFCFDF"
+    "color": "#EDE7E3"
   },
   {
     "name": "sky blue crayola",
-    "color": "#D9EFFA"
+    "color": "#56CFE1"
   },
   {
     "name": "vivid sky blue",
-    "color": "#B4D5E8"
+    "color": "#48BFE3"
   },
   {
     "name": "blue jeans",
-    "color": "#BBDAEC"
+    "color": "#4EA8DE"
   },
   {
     "name": "tufts blue",
-    "color": "#A7C6DB"
+    "color": "#5390D9"
   },
   {
     "name": "slate blue",
-    "color": "#8EB7D3"
+    "color": "#5E60CE"
   },
   {
     "name": "navy blue",
-    "color": "#7AAFCF"
+    "color": "#03045E"
   },
   {
     "name": "dark cornflower blue",
-    "color": "#86BCD6"
+    "color": "#023E8A"
   },
   {
     "name": "star command blue",
-    "color": "#8AA9BB"
+    "color": "#0077B6"
   },
   {
     "name": "blue green",
-    "color": "#7197A4"
+    "color": "#0096C7"
   },
   {
     "name": "cerulean crayola",
-    "color": "#BBCFDA"
+    "color": "#00B4D8"
   },
   {
     "name": "sky blue crayola",
-    "color": "#C0D1DB"
+    "color": "#90E0EF"
   },
   {
     "name": "blizzard blue",
-    "color": "#D9E0E8"
-  },
-  {
-    "name": "powder blue",
-    "color": "#DCE2F2"
-  },
-  {
-    "name": "blue sapphire",
-    "color": "#A8C0DA"
-  },
-  {
-    "name": "cambridge blue",
-    "color": "#DBEBEA"
+    "color": "#ADE8F4"
   }
 ]
