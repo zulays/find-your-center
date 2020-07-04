@@ -10,6 +10,7 @@ import colors from "./data/colors.json"
 import Affirm from "./Affirm"
 import Pups from "./Pups"
 import Count from "./Count"
+import Contact from "./Contact"
 
 
 function App() {
@@ -39,10 +40,10 @@ function App() {
   const colorChange = async () => {
     for (let i = 0; i < colors.length; i++) {
       if (i === colors.length - 1) {
-        await slow(1050)
+        await slow(2000)
         updateColor(colors[i].color)
         i = 0
-      } await slow(1050)
+      } await slow(2000)
       updateColor(colors[i].color)
     }
   }
@@ -55,11 +56,13 @@ function App() {
 
   return (
     <div className="app" style={{ backgroundColor: color }}>
+
       <nav className="nav-bar">
         <Nav />
       </nav>
 
       <main>
+
         <Route path="/" exact>
           <Welcome />
         </Route>
@@ -75,11 +78,15 @@ function App() {
         <Route path="/dashboard/pups">
           <Pups pups={pup} pupsFunc={findPup} guard={guard} />
         </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
       </main>
 
       <footer>
         <Footer />
       </footer>
+
 
     </div >
   );
