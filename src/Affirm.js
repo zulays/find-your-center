@@ -7,7 +7,7 @@ function Affirm(props) {
   return (
     <>
       <div className="affirm">
-        <p className="quote-cont">{props.affirm}</p>
+        <p className="quote-text">{props.affirm}</p>
         <button className="affirm-button" onClick={props.func}>generate an affirmation</button>
         <Link to="/dashboard"><p className="return-text">return to dashboard</p></Link>
       </div>

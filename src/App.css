@@ -1,16 +1,18 @@
 /* ************** Base Structure ************** */
 
 .app{
+  /* position: relative; */
   text-align: center;
   font-family: "Gotu", "Open Sans", sans-serif;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   width: 100%;
   color: #2B2D2F;
-  display: flex;
+  /* display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
   align-items: center;
-  align-content: center;
+  align-content: center; */
 }
 
 a{
@@ -19,6 +21,7 @@ a{
 }
 
 main{
+  margin: 10% 0;
   text-align: center;
   display:flex;
   justify-content: space-evenly;
@@ -31,19 +34,20 @@ main{
 
 .nav,
 .nav-li{
+  margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  text-align: center;
+  text-align: right;
   list-style-type: none;
-  padding: 15px;
+  padding: 10px;
   font-size: 25px;
 }
 
 /* ************** Components - Footer ************** */
 
 footer{
-  position: relative;
+  /* position: absolute; */
   text-align: center;
   display: flex;
   justify-content: center;
@@ -79,25 +83,44 @@ footer{
   align-content: center;
 }
 
+.title{
+  display: block;
+}
+
 .dash-affirm,
 .dash-count,
 .dash-pups{
   text-align: center;
-  background-color: rgba(211, 211, 211, 0.2);
-  border: 2px solid rgba(211, 211, 211, 0.2);
+  width: 210px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 8px;
   box-shadow: 5px 5px 20px 5px #808080;
   margin: 20px;
   padding: 30px;
 }
 
-/* ************** All Components - Body ************** */
+.dash-affirm{
+  background-image: url("https://res.cloudinary.com/zumariposa/image/upload/v1593904758/affirm-text_dlio75.png");
+}
+
+.dash-count{
+  background-image: url("https://res.cloudinary.com/zumariposa/image/upload/v1593903769/count-text_zbjejm.png");
+}
+
+.dash-pups{
+  background-image: url("https://res.cloudinary.com/zumariposa/image/upload/v1593904017/pup-text_k13f6m.png");
+}
+
+/* ************** All Components - InnerBody ************** */
 
 .affirm,
 .count,
 .pups{
+  position: relative;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(31, 72, 136, 0.7);
   border: 2px solid rgba(211, 211, 211, 0.2);
   border-radius: 8px;
   box-shadow: 5px 5px 20px 5px #808080;
@@ -117,15 +140,24 @@ footer{
 }
 
 .pupImg{
-  max-width: 500px;
-  height: auto;
-  margin: 20px;
+  width: 100%;
+  height: 600px;
+  margin: 10px;
+}
+
+.return-text{
+  text-align: center;
+  bottom: 0;
+  left: auto;
+  right: auto;
+  position: absolute;
 }
 
 /* ************** Components - Buttons ************** */
 
 .affirm-button,
-.pups-button{
+.pups-button,
+.welcome-button{
   display: block;
   font-family: "Gotu", "Open Sans", sans-serif;
   margin: 100px;
@@ -134,4 +166,14 @@ footer{
 }
 
 
+/* ************** All Components - Text ************** */
 
+.dash-text {
+  display: block;
+  top: 0; 
+}
+.quote-text,
+.card-text,
+.count-text{
+
+}

@@ -62,7 +62,6 @@ function App() {
       </nav>
 
       <main>
-
         <Route path="/" exact>
           <Welcome />
         </Route>
