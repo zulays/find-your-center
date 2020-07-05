@@ -1,15 +1,18 @@
 import React from "react"
-import { withRouter } from "react-router-dom"
+import { Link, withRouter } from "react-router-dom"
 
-function Contact() {
+
+function Contact(props) {
 
   return (
-    <div className="contact-form">
-      <form>
-        <input type="text" placeholder="Leave your suggestions" />
-        <button>submit</button>
-      </form>
-    </div>
+    <>
+      <div className="contact">
+        <input type="text" placeholder="message" />
+        <button className="contact-button">submit</button>
+      </div>
+
+    </>
+
   )
 }
 
