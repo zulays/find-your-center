@@ -10,7 +10,6 @@ import colors from "./data/colors.json"
 import Affirm from "./Affirm"
 import Pups from "./Pups"
 import Count from "./Count"
-import Contact from "./Contact"
 
 
 function App() {
@@ -76,9 +75,6 @@ function App() {
         </Route>
         <Route path="/dashboard/pups">
           <Pups pups={pup} pupsFunc={findPup} guard={guard} />
-        </Route>
-        <Route path="/contact">
-          <Contact />
         </Route>
       </main>
 
