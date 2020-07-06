@@ -86,6 +86,7 @@ function App() {
 
 
   //slows down the loop to allow color to be rendered
+  //guidance from https://flaviocopes.com/how-to-slow-loop-javascript/
   const slow = (ms) => {
     return new Promise(slowDown => setInterval(slowDown, ms))
   }
