@@ -7,9 +7,6 @@ function Dashboard() {
 
   return (
     <>
-      <div className="title">
-        {/* <h2>Select the tool you'd like to use today</h2> */}
-      </div>
 
       <div className="dash">
         <Link to="/dashboard/affirm">
