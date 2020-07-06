@@ -29,7 +29,7 @@ a{
 }
 
 main{
-  margin: 10% 0;
+  margin: 8% 0;
   text-align: center;
   display:flex;
   justify-content: space-evenly;
@@ -313,7 +313,7 @@ footer{
 }
 }
 
-/* ----------------------- Media Queries  - Tablet + Laptops -----------------------  */
+/* ----------------------- Media Queries  - Tablet -----------------------  */
 @media only screen and (min-width: 768px) and (max-width: 1024px){
 
   .app{
@@ -431,5 +431,18 @@ footer{
     border-radius: 6px;
     font-size: 15px;
   }
+
+}
+
+/* ----------------------- Media Queries  - Laptops + Desktops -----------------------  */
+@media only screen and (min-width: 1025px) and (max-width: 2500px){
+
+  .pupImg{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 6px;
+  }
+
 
 }
