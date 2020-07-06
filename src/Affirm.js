@@ -8,10 +8,11 @@ function Affirm(props) {
     <>
       <div className="affirm">
         <p className="quote-text">{props.affirm}</p>
-        <button className="affirm-button" onClick={props.func}>generate an affirmation</button>
-        <Link to="/dashboard"><p className="return-text">return to dashboard</p></Link>
+        <button className="affirm-button" onClick={props.func}>spark joy</button>
+        <div className="return-text">
+          <Link to="/dashboard"><h5>return to dashboard</h5></Link>
+        </div>
       </div>
-
     </>
 
   )

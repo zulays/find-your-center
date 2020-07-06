@@ -8,8 +8,8 @@ function Pups(props) {
     <>
       <div className="pups">
         {props.guard && <img className="pupImg" src={`https://random.dog/${props.pups}`} alt="puppy" />}
-        <button className="pups-button" onClick={props.pupsFunc}>select for a puppy photo</button>
-        <Link to="/dashboard"><p className="return-text">return to dashboard</p></Link>
+        <button className="pups-button" onClick={props.pupsFunc}>push for puppy</button>
+        <Link to="/dashboard"><h5 className="return-text">return to dashboard</h5></Link>
       </div>
 
     </>

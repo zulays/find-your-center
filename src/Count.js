@@ -17,7 +17,7 @@ function Count() {
           <p className="count-list"><span className="nums">2 </span>things you can smell</p>
           <p className="count-list"><span className="nums">1 </span> things you can taste</p>
         </div>
-        <Link to="/dashboard"><p className="return-text">return to dashboard</p></Link>
+        <Link to="/dashboard"><h5 className="return-text">return to dashboard</h5></Link>
       </div>
 
 
